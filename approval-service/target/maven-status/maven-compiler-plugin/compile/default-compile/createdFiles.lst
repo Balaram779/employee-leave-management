@@ -1,0 +1,5 @@
+com\example\approvalservice\ApprovalServiceApplication.class
+com\example\approvalservice\controller\ApprovalController.class
+com\example\approvalservice\kafka\LeaveEventConsumer.class
+com\example\approvalservice\model\ApprovalEntity.class
+com\example\approvalservice\repository\ApprovalRepository.class
