@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_postman_id": "employee-leave-system-test",
+    "name": "Employee Leave Management System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Employee",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employeeId\": \"e123\",\n  \"name\": \"John Doe\",\n  \"department\": \"IT\",\n  \"designation\": \"Developer\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "employees"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Apply Leave",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employeeId\": \"e123\",\n  \"startDate\": \"2025-06-10\",\n  \"endDate\": \"2025-06-11\",\n  \"reason\": \"Medical\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/leaves",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "leaves"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Leave by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/leaves/{{leaveId}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "leaves",
+            "{{leaveId}}"
+          ]
+        }
+      }
+    }
+  ]
+}
