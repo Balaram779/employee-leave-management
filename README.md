@@ -76,13 +76,6 @@ Import this Postman Collection to test the APIs:
 
 ## 📸 Screenshots
 📄 See all screenshots in this document: [Screenshots.docx](./Balaram_Usecase_result_screenshots.docx)
-| Description | Screenshot |
-|-------------|------------|
-| ✅ Leave created via Postman | ![Leave](./screenshots/postman-leave-success.png) |
-| ✅ Kafka consumer running | ![Kafka](./screenshots/kafka-consumer-logs.png) |
-| ✅ Approval status in DB | ![H2](./screenshots/h2-db-status.png) |
-| ✅ Docker containers | ![Docker](./screenshots/docker-running.png) |
-| ✅ Unit tests passed | ![Tests](./screenshots/unit-tests.png) |
 
 🧪 Unit Tests
 LeaveControllerTest: REST endpoint + Kafka mock
